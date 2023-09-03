@@ -6,5 +6,5 @@
 
 My one-stop-shop for Django notes and resources.
 
-[![Python | Concepts](https://img.shields.io/badge/Python%20|%20Concepts-Django%20@all-blue?style=for-the-badge)](https://your-link-here.com)
+[![Your Project Name](https://your-project-logo-url.com)](https://your-project-link.com)
 
