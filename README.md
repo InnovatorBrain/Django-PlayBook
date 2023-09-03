@@ -6,4 +6,4 @@
 
 My one-stop-shop for Django notes and resources.
 
-[![Alternative Sign-In][sign-in-shield]][sign-in-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
