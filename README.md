@@ -6,5 +6,5 @@
 
 My one-stop-shop for Django notes and resources.
 
-[![Your Project Name](https://your-project-logo-url.com)](https://your-project-link.com)
+[![Project Name](https://img.shields.io/badge/Project%20Name-Your%20Project%20Name-blueviolet?style=for-the-badge&logo=python)](https://your-link-here.com)
 
