@@ -1,5 +1,5 @@
 <a href="">
-  <img align="center" src="https://img.shields.io/badge/Python%20|%20DConcepts-Django%20@all-blue" alt="center">
+  <img align="center" src="https://img.shields.io/badge/Python%20|%20Concepts-Django%20@all-blue" alt="center">
 </a>
 
 ## Python and Django.
