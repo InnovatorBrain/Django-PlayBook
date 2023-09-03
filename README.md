@@ -6,4 +6,5 @@
 
 My one-stop-shop for Django notes and resources.
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Python | Concepts - Django @all](https://img.shields.io/badge/Python%20|%20Concepts-Django%20@all-blue)](https://www.djangoproject.com/)
+
