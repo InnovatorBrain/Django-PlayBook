@@ -44,6 +44,12 @@ class ProductImageViewSet(ModelViewSet):
 @urls.py 
 products_router.register('images', views.ProductImageViewSet, basename='product-images')
 ```
+### Returning Images from the APIs:
+Add a serializer field for the desired image and connect it accordingly.
+```python
+images = ProductImageSerializer(many=True, read_only=True)
+```
+### Validation uploading File:
 
 
 
