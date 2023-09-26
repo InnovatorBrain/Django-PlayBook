@@ -50,6 +50,32 @@ Add a serializer field for the desired image and connect it accordingly.
 images = ProductImageSerializer(many=True, read_only=True)
 ```
 ### Validation uploading File:
+For other validators like (file size)
+create a New file in-store app validators.py
+```python
+@validators.py
+from django.core.exceptions import ValidationError
+def validate_file_size(file):
+    max_size_kb = 50
+    if file.size > max_size_kb * 1024:
+        raise ValidationError(f"File size must be less than {max_size_kb}KB")
+@models.py
+    image = models.ImageField(upload_to="store/products", validators= [validate_file_size])
+```
+##### Javascript basic layout to upload files.
+
+## Enabling CORS:
+Cross-Origin Resources Shairing:
+- install django-cors-headers
+```python
+python -m pip install django-cors-headers
+....
+```
+
+
+
+
+
 
 
 
