@@ -71,8 +71,25 @@ Cross-Origin Resources Shairing:
 python -m pip install django-cors-headers
 ....
 ```
+### Managing iMages in the Admin:
+```python
+@store.admin.py
+class ProductImageInline(admin.TabularInline):
+    model = models.ProductImage
+    readonly_fields = ['thumbnail']
 
+    def thumbnail(self, instance):
+        if instance.image.name != '':
+            return format_html('<img src="{}" style="width: 100px; height: 100px;" />'.format(instance.image.url))
+        return '
+#Putt in Product class
+inlines = [ProductImageInline]
 
+@core.admin.py
+
+class CustomProductAdmin(ProductAdmin):
+    inlines = [TagInline, ProductImageInline]
+```
 
 
 
