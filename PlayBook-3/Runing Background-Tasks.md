@@ -44,6 +44,7 @@ celery -A storefront worker --loglevel=info
 python manage.py runserver
 docker run -p 6379:6379 redis
 celery -A storefront worker
+celery -A storefront worker --loglevel=info
 ```
 ### Creating and executing tasks:
 
