@@ -38,6 +38,44 @@ web: gunicorn storefront.wsgi
 worker: celery -A storefront worker
 ```
 ## Provisioning a MySQL Database:
-Kindly access the cloud service provider database through Heroku/apps.base.
+Kindly access the cloud service provider database through Heroku/apps.
+Go config add-ons - Search ClearDB MySQL and choose plan
+```cmd
+heroku config
+```
+Through this copy variable path before`?` 
+```cmd
+heroku config:set DATABASE_URL = `past`
+```
+@dev.py
+Copy DATABASE Section
+To secure these things run below
+```cmd
+pipenv install dj-database-url
+```
+Go prod.py
+past here and remove the dictionary fro this pasted text
+```python
+import dj-database-url
+{
+'default': dj-database-url.config()
+}
+```
+## Provisioning SMTP Server:
+in Heroku app Search mailgun
+```cmd
+heroku config
+```
+@common.py copy settings & past in @dev.py, and also past in @prod.py 
+```python
+@prod.py
+|EMAIL_HOST = os.environ ['MAILGUN_SMTP_SERVER']
+EMAIL_HOST_USER = os.environ ['MAILGUN_SMTP_LOGIN']
+EMAIL_HOST_PASSWORD = os.environ ['MAILGUN_SMTP_PASSWORD']
+EMAIL_PORT = os.environ['MAILGUN_SMTP_PORT']
+```
+## Provisioning Redis instance:
+
+
 
 
