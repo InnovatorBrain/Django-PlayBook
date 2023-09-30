@@ -77,7 +77,7 @@ EMAIL_PORT = os.environ['MAILGUN_SMTP_PORT']
 ## Provisioning Redis instance:
 ## Deploying the Application:
 git push in master branch
-```terminal
+```cmd
 git push heroku master #while pushing in heroku repo
 heroku config
 heroku run bash
@@ -85,7 +85,7 @@ heroku run python manage.py createsuper user
 heroku open
 ```
 ## Populating the database:
-```terminal
+```cmd
 #Short way
 heroku run python manage.py seed_db
 #Another way to gain full access
