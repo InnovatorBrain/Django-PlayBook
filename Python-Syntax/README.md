@@ -12,41 +12,54 @@ import random
 print(random.randrange(1, 10))
 ```
 ## Strings
-- `len`
-- `in`
-- `not in`
-- **Slicing**
-- `upper()`
-- `lower()`
-- `strip()`
-- `replace()`
-- `split()`
-- `format()`
-- *...and more*
-
+```python
+"free" in txt
+"expensive" not in txt
+len
+in
+not in
+#Slicing
+upper()
+lower()
+strip()
+replace()
+split()
+format()
+...and more
+```
 ## Operators
-- `is`
-- `is not`
-- `in`
-- `not in`
-
+```python
+and
+or
+not
+is
+is not
+in
+in not
+& 	AND
+|	OR
+~	NOT
+^	XOR
+```
 ## Lists
-- `list()`
-- **Changing List Items**
-- `append()`
-- `insert()`
-- `extend()`
-- `pop()`
-- `del thislist[0]`
-- `clear()`
-- **List Comprehension**
-- `sort()` or `sort(key=str.lower)`
-- `reverse()`
-- `copy()`
-- `count()`
-- `index()`
-- `remove()`
-
+```python
+list()
+Changing List Items
+append()
+insert()
+extend()
+pop()
+del thislist[0]
+clear()
+List Comprehension
+sort()
+sort(key=str.lower)
+reverse()
+copy()
+count()
+index()
+remove()
+```
 ## Tuples
 - `tuple()`
 - **Modifying with Lists** (`list()` or `tuple()`)
