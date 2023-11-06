@@ -2,7 +2,15 @@
 
 A concise reference guide to fundamental programming concepts in python.
 
-
+## Variables
+```python
+global x
+```
+## Numbers
+```python
+import random
+print(random.randrange(1, 10))
+```
 ## Strings
 - `len`
 - `in`
