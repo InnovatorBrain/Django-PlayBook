@@ -1,6 +1,7 @@
 # Programming Concepts Cheat Sheet
 
-A concise reference guide to fundamental programming concepts.
+A concise reference guide to fundamental programming concepts in python.
+
 
 ## Strings
 - `len`
