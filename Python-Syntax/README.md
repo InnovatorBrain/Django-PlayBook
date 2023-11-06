@@ -6,11 +6,13 @@ A concise reference guide to fundamental programming concepts in python.
 ```python
 global x
 ```
+
 ## Numbers
 ```python
 import random
 print(random.randrange(1, 10))
 ```
+
 ## Strings
 ```python
 "free" in txt
@@ -27,6 +29,7 @@ split()
 format()
 ...and more
 ```
+
 ## Operators
 ```python
 and
@@ -41,59 +44,71 @@ in not
 ~	NOT
 ^	XOR
 ```
+
 ## Lists
 ```python
 list()
 Changing List Items
-append()
 insert()
+append()
 extend()
+remove()
 pop()
 del thislist[0]
 clear()
 List Comprehension
+newlist = [x for x in fruits if "a" in x]
 sort()
+sort(reverse = True)
 sort(key=str.lower)
 reverse()
 copy()
 count()
 index()
-remove()
 ```
+
 ## Tuples
-- `tuple()`
-- **Modifying with Lists** (`list()` or `tuple()`)
-
+```python
+tuple()
+Modifying with Lists (`list()` or `tuple()`)
+```
 ## Sets
-- `set()`
-- `add()`
-- `update()`
-- `remove()`
-- `discard()`
-- `clear()`
-- `union()`
-- `intersection_update()`
-- `intersection()`
-- `symmetric_difference_update()`
-- `symmetric_difference()`
-
+Unordered, Unchangeable, Duplicates Not Allowed
+```python
+set()
+add()
+update()
+remove()
+discard()
+clear()
+union()
+intersection_update()
+intersection()
+symmetric_difference_update()
+symmetric_difference()
+```
 ## Dictionaries
-- `dict()`
-- `get()`
-- `keys()`
-- `values()`
-- `items()`
-- `update()`
-- `pop()`
-- `popitem()`
-- `del()`
-- `clear()`
-- `copy()`
-
+Changeable, Duplicates Not Allowed
+```python
+dict()
+get()
+keys()
+values()
+items()
+update()
+pop()
+popitem()
+del()
+clear()
+copy()
+for x,y in thisdict.items():
+  print(x,y)
+```
 ## Conditional Statements
-- `print()` using Ternary Operators
-- `pass`
-
+```
+print() using Ternary Operators
+pass
+```
 ## Loops
 
 ### While Loop
