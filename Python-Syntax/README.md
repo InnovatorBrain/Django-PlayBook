@@ -132,17 +132,25 @@ pass
 
 ## Lambda Functions
 - Ideal for compact operations
-
+```
+x = lambda a, b : a * b
+print(x(5, 6))
+```
 ## Classes and Inheritance
 - `class` creation
 - `__init__()` for initialization
 - `__str__()` for string representation
-- `self` reference
+The self parameter is a reference to the current instance of the class, and is used to access variables that belong to the class.
+- `self`
 - `del` for deletion
 - `super()` for parent class access
 
 ## Iterators and Scope
 - `iter()` and `next()`
+```
+myit = iter(mystr)
+print(next(myit))
+```
 - `__iter__()` and `__next__()`
 - Global and Local scope
 
@@ -154,10 +162,14 @@ pass
 - `math` module functions
 - *...and more*
 
-## JSON and Regular Expressions
+# JSON and Regular Expressions
 - `import json`
 - `json.load()` for JSON to Python
 - `json.dumps()` for Python to JSON
+```
+json.dumps(x, indent=4, separators=(". ", " = "), sort_keys=True)
+```
+## RegEx
 - `import re`
 - `re.search()`, `re.findall()`, `re.split()`, `re.sub()`
 
