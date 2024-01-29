@@ -42,7 +42,7 @@ export default App;
 ```
 
 ## Use Axios in React with Async & Await. Also Error Handling woth Try Catch
-```react
+```react.js
 import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios.jsx";
@@ -90,7 +90,7 @@ const App = () => {
 export default App;
 ```
 ## Best wat to write Axios in react app by creating a axios.js file and add the below code and then simply import the axios from this file and pass only the string for which you want data.
-```react
+```react.js
 import axios from "axios";
 
 // we need to pass the baseURL as an object
@@ -101,7 +101,7 @@ const API = axios.create({
 export default API;
 ```
 
-```react
+```react.js
 import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "./axios.jsx";
