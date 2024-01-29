@@ -1,6 +1,6 @@
 # Axios in React Notes:
 ## Use Axios in React with Promises and Error Handling
-```react
+```react.js
 import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios.jsx";
