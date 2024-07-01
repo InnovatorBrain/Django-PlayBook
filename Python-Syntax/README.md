@@ -81,11 +81,12 @@ update()
 remove()
 discard()
 clear()
-union()
+union() , |
 intersection_update()
-intersection()
+intersection() , &
+difference , -
 symmetric_difference_update()
-symmetric_difference()
+symmetric_difference() , ^
 ```
 ## Dictionaries
 Changeable, Duplicates Not Allowed
